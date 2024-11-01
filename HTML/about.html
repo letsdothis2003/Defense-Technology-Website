@@ -2,33 +2,107 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About</title>
-     <link rel="stylesheet" href="homepage.css">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="../CSS/about_us.css">
+    <script src="https://kit.fontawesome.com/6d859f23dc.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-    <header>
-        <img src="companylogo_1.png" alt="Company Logo">
-        <img src="companylogo_2.png" alt="Company Text Logo" class="text-logo">
-        <nav>
-            <ul>
-                <li><a href="homepage.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section>
+    <!--The code below is for the nav bar-->
+    <nav class="bar" id="top">
+        <div class="logo"><a href=""><img id=logo src="companylogo_2.jpeg" alt="Cuthbert Dynamics Logo"></a></div>
+        <ul class="nav_links">
+            <li><a href="">Home</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+        <div class="navbar-toggle" id="mobile">&#9776;</div>
+    </nav>
+    <!--Who We Are Section-->
+    <div>
         <h1>About Us</h1>
-        <p> We are a bleeding-edge leader at the cross section of computing and defense technology.<br> We are driving the boundaries of innovation by developing state of the art computing products that only help push the envelope of modern technologies, but also serve as building blocks for paradigm-shifting developments in the field of defense. We create the most advanced and reliable defense systems by harnessing the power of our revolutionary computing solutions-our innovations protecting and empowering in equal measure. 
-        </p>
-    </section>
 
+        <h2>Who We Are</h2>
+        <h2>What We Do</h2>
+        <p></p>
+    </div>
+    <!--The FAQ Expanded Card Section is below-->
+    <h1 id="faq-head">Frequently Asked Questions</h1>
+    <div class="faq-container">
+        <div class="faq active">
+            <h3 class="faq-title">
+                Question 1?
+            </h3>
+            <p class="faq-text">
+                Answer 1.
+            </p>
+
+            <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+
+        </div>
+        <div class="faq">
+            <h3 class="faq-title">
+                Question 2?
+            </h3>
+            <p class="faq-text">
+                Answer 2.
+            </p>
+
+            <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+
+        </div>
+        <div class="faq">
+            <h3 class="faq-title">
+                Question 3?
+            </h3>
+            <p class="faq-text">
+                Answer 3.
+            </p>
+
+            <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+
+        </div>
+    </div>
+    
+    <!--Testing for submitting a question on Contact page-->
+    <div class="form-container">
+        <h1>Have More Questions? Ask here.</h1>
+        <form>
+            <div class="form-control">
+                <input type="text" required>
+                <label>Email</label>
+            </div>
+            <div class="form-control">
+                <input type="text" required>
+                <label>Name</label>
+            </div>
+            <div class="form-control">
+                <input id = "newq" type="text" required>
+                <label>Question</label> 
+            </div>
+
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+    <!--Floating button pointing to top of page-->
+    <a href='#top' class="topbutton"><i class="fa-regular fa-circle-up"></i></a>
+
+    <!--Footer at bottom goes here.-->
     <footer>
-        <p>&copy; 2024 Cutberth Dynamics. All rights reserved.</p>
+        <p>&copy; 2024 Cuthbert Dynamics. All rights reserved.</p>
     </footer>
 
+    <script src="../JavaScript/about_us.js"></script>
 </body>
 </html>
