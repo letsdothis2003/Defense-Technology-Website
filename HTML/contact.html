@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="contact_us.css">
+    <script src="https://kit.fontawesome.com/6d859f23dc.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!--The code below is for the nav bar-->
     <nav class="bar" id="top">
-        <div class="logo"><a href=""><img id=logo src="companylogo_2.png" alt="Cuthbert Dynamics Logo"></a></div>
+        <div class="logo"><a href="homepage.html"><img id=logo src="companylogo_2.png" alt="Cuthbert Dynamics Logo"></a></div>
         <ul class="nav_links">
             <li><a href="homepage.html">Home</a></li>
             <li><a href="products.html">Products</a></li>
@@ -26,6 +27,20 @@
       
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
+
+            <p>What is your reason for contacting us?</p>
+
+            <span>
+                <label for="">Hardware Issue</label>
+                <input type="radio" id="hware"name="reason">
+                <label for="">Software Issue</label>
+                <input type="radio" id="sware" name="reason">
+                <label for="">Business Inquiry</label>
+                <input type="radio" id="binq" name="reason">
+                <label for="">Other</label>
+                <input type="radio" id="other" name="reason">
+            </span>
+
       
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
