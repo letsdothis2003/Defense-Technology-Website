@@ -16,3 +16,11 @@ document.getElementById("contactForm").addEventListener("submit", function(event
       alert("Please fill in all the fields.");
     }
   });
+
+//Nav Bar Code
+const mobile = document.getElementById('mobile');
+const navLinks = document.querySelector('.nav_links');
+
+mobile.addEventListener('click', ()=>{
+    navLinks.classList.toggle('show');
+});
