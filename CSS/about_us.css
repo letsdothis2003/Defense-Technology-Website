@@ -253,6 +253,7 @@ transform: scale(1.02);
     padding: 15px 0;
     font-size: 18px;
     color: #fff;
+    padding-left: 5px;
 }
 
 .form-control input:focus,
@@ -263,8 +264,9 @@ transform: scale(1.02);
 
 .form-control label{
     position:absolute;
-    top:-30px;
+    top: 15px;
     left:0;
+    padding-left: 5px;
 }
 
 .form-control label span{
