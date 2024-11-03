@@ -159,25 +159,6 @@ img {
     text-align: center;
 }
 
-.buttons-container {
-    margin-top: 10px;
-}
-
-.btn {
-    background-color: #ccc;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.btn:hover {
-    opacity: 0.9;
-}
-
-.btn:focus {
-    outline: none;
-}
-
 footer {
     background-color: #333;
     color: #fff;
