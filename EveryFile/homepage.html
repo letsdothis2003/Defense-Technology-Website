@@ -4,32 +4,96 @@
     <meta charset="UTF-8">
     <title>Homepage</title>
      <link rel="stylesheet" href="homepage.css">
+     
+ 
 </head>
 <body>
+  <header>
+    <nav class="bar" id="top">
+      <div class="logo"><a href="homepage.html"><img id=logo src="companylogo_2.png" alt="Cuthbert Dynamics Logo"></a></div>
+        <ul class="nav_links">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+      <div class="navbar-toggle" id="mobile">&#9776;</div>
+    </nav>
+  </header>
 
-    <header>
-        <img src="companylogo_1.png" alt="Company Logo">
-        <img src="companylogo_2.png" alt="Company Text Logo" class="text-logo">
-        <nav>
-            <ul>
-                <li><a href="homepage.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <section class="intro">
+      <h1>Welcome to Cuthbert Dynamics</h1>
+      <p>Providing the best technologies since 2024.</br>
+        We don't just imagine the future-we build it!
+      </p>
+  </section>
 
-    <section>
-        <h1>Welcome to Cuthbert Dynamics</h1>
-        <p>Providing the best technologies since 2024.
-          We don't just imagine the future-we build it!
-        </p>
-    </section>
+  <div class="carousel">
+    <div class="image-container" id="imgs">
+      <!-- First Image -->
+      <div class="image-wrapper">
+        <img src="malaysia.png" alt="first-image" />
+        <div class="caption">12/2/2024 - First factory in Malaysia established!</div>
+        <meta content="https://www.pexels.com/photo/petronas-tower-kuala-lumpur-malaysia-22804/" />
+      </div>
 
-    <footer>
-        <p>&copy; 2024 Company Name. All rights reserved.</p>
-    </footer>
+      <!-- Second Image -->
+      <div class="image-wrapper">
+        <img src="robotarm.png" alt="second-image" />
+        <div class="caption">12/2/2023 - Prosthetics line for veterans revealed.</div>
+        <meta content="https://pixabay.com/photos/robot-arm-technology-robot-arm-2791671/" />
+      </div>
+
+      <!-- Third Image -->
+      <div class="image-wrapper">
+        <img src="apple.png" alt="third-image" />
+        <div class="caption">12/2/2023 - Apple collaboration to help improve Mac firmware</div>
+        <meta content="https://www.pexels.com/photo/silver-imac-displaying-collage-photos-1779487/" />
+      </div>
+    </div>
+  </div>
+
+  <div class="form-container">
+    <form class="newsletter">
+      <h2>
+        Want to stay up to date? </br>
+        Join our NewsLetter!
+      </h2>
+      <label for="email">Email:</label> 
+      <input type="email" id="email" required>
+      
+      <div class="radiobuttons">
+        <h3>Subscription Type:</h3>
+        <input type="radio" id="daily" name="subscription" value="daily" required>
+        <label for="daily">Daily</label>
+        <input type="radio" id="weekly" name="subscription" value="weekly">
+        <label for="weekly">Weekly</label>
+        <input type="radio" id="monthly" name="subscription" value="monthly">
+        <label for="monthly">Monthly</label>
+      </div>
+
+      <div class="checkboxes">
+        <h3>What Topics Would You Like to Read About?</h3>
+        <input type="checkbox" name="topic" id="dev">
+        <label for="dev">Development</label>
+        <input type="checkbox" name="topic" id="updates">
+        <label for="updates">Updates</label>
+        <input type="checkbox" name="topic" id="Issues">
+        <label for="Issues">Known Issues</label>
+        <input type="checkbox" name="topic" id="Expo">
+        <label for="Expo">Expo Info</label>
+      </div>
+
+      <input type="submit" value="Join">
+    </form>
+  </div>
+ 
+  <script src="newscarousel.js"></script>
+  <footer>
+    &copy; 2024 Cuthbert Dynamics Name. All rights reserved.
+    <br>Site makers:Bernardo Antonio Manto, Shah Muzafar, Steven Campeche, Fahim Tanvir, Jamal Siddiqui
+  </footer>
 
 </body>
 </html>
+        

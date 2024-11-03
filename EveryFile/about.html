@@ -2,34 +2,132 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About</title>
-     <link rel="stylesheet" href="homepage.css">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="about_us.css">
+    <script src="https://kit.fontawesome.com/6d859f23dc.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!--The code below is for the nav bar-->
+<nav class="bar" id="top">
+        <div class="logo"><a href="homepage.html"><img id=logo src="companylogo_2.png" alt="Cuthbert Dynamics Logo"></a></div>
+        <ul class="nav_links">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="navbar-toggle" id="mobile">&#9776;</div>
+    </nav>
+    <!--Who We Are Section-->
+    <div class="descriptions">
+            <h1>About Us</h1>
+            <img id="logo2" src="companylogo_2.png" alt="Smaller Cuthbert Dynamics Logo">
+        <h2>Who We Are</h2>
+        <p>Cuthbert Dynamics a bleeding-edge leader at the cross section of computing and defense technology. We are driving the boundaries of innovation by developing state of the art computing products that only help push the envelope of modern technologies, but also serve as building blocks for paradigm-shifting developments in the field of defense. We create the most advanced and reliable defense systems by harnessing the power of our revolutionary computing solutions-our innovations protecting and empowering in equal measure. We are a worldwide entity that dedicate ourselves through engineering, research and inegrity.</p>
+        <h2>What We Do</h2>
+        <p> We dedicate ourselves in high-performance computing products such as servers, processors, and tailored hardware, which have been optimized for military-grade applications and complex computational needs, among others. Its solutions in defense technology entail next-generation surveillance systems, autonomous drones, precision-guided defense systems, and cybersecurity platforms. Beyond this, we develop integrated software solutions using AI-driven algorithms, simulation software, and secure communication networks, which could help enhance operational efficiency and better decision-making in defense. Using the services of custom engineering, we offer bespoke solutions that meet the peculiar demands of both government and private-sector clients, warranting innovation, reliability, and security every step of the way.</p>
+         <h2>Why Choose Us</h2>
+        <h3>At Cuthbert Dynamics, we pride ourselves on our:</h3>
+        <ul class="why-list">
+            <li>
+                Innovative Solutions
+            </li>
+            <li>
+                Customizable Technology
+            </li>
+            <li>
+                Worldwide Implementation
+            </li>
+            <li>
+                Rapid Deployment
+            </li>
+            <li>
+                Fast Customer Support
+            </li>
+            <li>
+                Customer Ratings
+            </li>
+        </ul>
+    </div>
+    <!--The FAQ Expanded Card Section is below-->
+    <h1 id="faq-head">Frequently Asked Questions</h1>
+    <div class="faq-container">
+        <div class="faq">
+            <h3 class="faq-title">
+                Where do we operate?
+            </h3>
+            <p class="faq-text">
+                We currently have factories in the United States, United Kingdom, Germany, Malaysia, China, Taiwan and India. We export our products towards those countries as well.  
+            </p>
 
-    <header>
-        <img src="companylogo_1.png" alt="Company Logo">
-        <img src="companylogo_2.png" alt="Company Text Logo" class="text-logo">
-        <nav>
-            <ul>
-                <li><a href="homepage.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+            <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
 
-    <section>
-        <h1>Welcome to Cuthbert Dynamics</h1>
-        <p>Providing the best technologies since 2024.
-          We don't just imagine the future-we build it!
-        </p>
-    </section>
+        </div>
+        <div class="faq">
+            <h3 class="faq-title">
+                Where can I apply for employment at Cuthbert?
+            </h3>
+            <p class="faq-text">
+            Contact us through our email and an application will be sent to you. Provide resume and cover letter within our application. We will get back at 5-6 bussiness days depending on which sectors are hiring. Sectors of course depend on your location and skills. 
+            </p>
 
+            <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+
+        </div>
+        <div class="faq">
+            <h3 class="faq-title">
+                What type of payments are accepted?
+            </h3>
+            <p class="faq-text">
+                We accept all major credit cards as well as Purchase Order numbers. Please note, you might be asked to verify just in case a mishap occurs if payment cannot be processed.
+            </p>
+
+            <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+
+        </div>
+    </div>
+    
+    <!--Testing for submitting a question on Contact page-->
+    <div class="form-container">
+        <h1>Have More Questions? Ask here.</h1>
+        <form>
+            <div class="form-control">
+                <input type="text" required>
+                <label>Email</label>
+            </div>
+            <div class="form-control">
+                <input type="text" required>
+                <label>Name</label>
+               
+            </div>
+            <div class="form-control">  
+                <input id = "newq" type="text" required>
+                <label>Question</label> 
+            </div>
+
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+    <!--Floating button pointing to top of page-->
+    <a href='#top' class="topbutton"><i class="fa-regular fa-circle-up"></i></a>
+
+    <!--Footer at bottom goes here.-->
     <footer>
-        <p>&copy; 2024 Company Name. All rights reserved.</p>
-    </footer>
+    &copy; 2024 Cuthbert Dynamics Name. All rights reserved.
+    <br>Site makers:Bernardo Antonio Manto, Shah Muzafar, Steven Campeche, Fahim Tanvir, Jamal Siddiqui
+  </footer>
 
+    <script src="about_us.js"></script>
 </body>
 </html>
