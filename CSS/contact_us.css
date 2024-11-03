@@ -143,12 +143,33 @@ display: flex;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
   }
-
+button:focus{
+    outline: none;
+}
   button:disabled {
     background-color: #ccc;
     cursor: not-allowed;
   }
+
+button .circle{
+    position: absolute;
+    background-color:white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);    
+    animation: scale .5s ease-out;
+}
+
+@keyframes scale{
+    to{
+        transform: translate(-50%, -50%) scale(2); 
+        opacity: 0;
+    }
+}
 
   .success-message {
     color: green;
