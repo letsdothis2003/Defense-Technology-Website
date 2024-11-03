@@ -318,7 +318,7 @@ tbody tr:hover {
 
 /* Additional content styling */
 .panel .content p {
-    color: black;
+    color: white;
     opacity: 0;
     /* Hidden by default */
     transition: opacity 0.3s ease-in-out;
@@ -482,3 +482,4 @@ footer {
         /* Single column layout for small screens */
     }
 }
+
