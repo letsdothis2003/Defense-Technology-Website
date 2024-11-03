@@ -1,3 +1,12 @@
+
+//Nav Bar Code
+const mobile = document.getElementById('mobile');
+const navLinks = document.querySelector('.nav_links');
+
+mobile.addEventListener('click', ()=>{
+    navLinks.classList.toggle('show');
+});
+
 const imgs = document.getElementById("imgs");
 const leftBtn = document.getElementById("left");
 const rightBtn = document.getElementById("right");
@@ -40,10 +49,3 @@ leftBtn.addEventListener("click", () => {
   resetInterval();
 });
 
-//Nav Bar Code
-const mobile = document.getElementById('mobile');
-const navLinks = document.querySelector('.nav_links');
-
-mobile.addEventListener('click', ()=>{
-    navLinks.classList.toggle('show');
-});
