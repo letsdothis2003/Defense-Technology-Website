@@ -55,11 +55,26 @@ function resetInterval() {
 
 //expanding cards
 const panels = document.querySelectorAll('.panel');
+const container = document.querySelector('.container');
 
 panels.forEach(panel => {
-    panel.addEventListener('click', () => {
-        removeActiveClasses();
-        panel.classList.add('active');
+    const closeButton = panel.querySelector('.close-btn');
+
+    // Expand panel on click
+    panel.addEventListener('click', (e) => {
+        // Check if click is on the panel, not the close button
+        if (e.target !== closeButton) {
+            removeActiveClasses();
+            panel.classList.add('active');
+            container.classList.add('active');
+        }
+    });
+
+    // Close panel on close button click
+    closeButton.addEventListener('click', (e) => {
+        e.stopPropagation(); // Prevent triggering panel click event
+        panel.classList.remove('active');
+        container.classList.remove('active');
     });
 });
 
@@ -67,11 +82,12 @@ function removeActiveClasses() {
     panels.forEach(panel => {
         panel.classList.remove('active');
     });
+    container.classList.remove('active');
 }
 //Nav Bar Code
 const mobile = document.getElementById('mobile');
 const navLinks = document.querySelector('.nav_links');
 
-mobile.addEventListener('click', ()=>{
+mobile.addEventListener('click', () => {
     navLinks.classList.toggle('show');
 });
