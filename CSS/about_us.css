@@ -8,6 +8,20 @@ body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+h1{
+    display:block;
+    text-align:center;
+    padding: 15px 0px;
+    position:relative;
+}
+
+#logo2{
+    position:relative;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
 /*Nav Stylings below, including mobile versions*/
 
 
@@ -305,6 +319,12 @@ transform: scale(1.02);
 .topbutton:hover{
     color: white;
     background-color:rgba(0, 0, 0, 0.312);
+}
+
+.descriptions p{
+    position:center;
+    font-size: 18px;
+    margin: 0px 40px;
 }
 
 /*Footer Styling*/
